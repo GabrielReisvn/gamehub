@@ -17,15 +17,49 @@ export default function gamecard(jogos){
         onPress={() => router.push(`/jogos/${jogo.id}`)}
         >
         
-            <Image source={jogo.imagem} style={style.Image}/>
+            <Image source={jogo.imagem} style={styles.imagem}/>
             <view style={styles.info}>
-                <text style={Styles.nome} numberOfLines={1}>
+                <text style={styles.nome} numberOfLines={1}>
                     {jogo.nome}
                 </text>
-                <text style={styles.genero}>{jogo.genero}</text>
-                <text style={styles.nota}> ⭐{jogo.genero}</text>
+                <text style={styles.genero}>{jogo.genero} </text>
+                <text style={styles.nota}>⭐ {jogo.genero}</text>
             </view>
         
         </Pressable>
     )
 }
+const styles = StyleSheet.create({
+  card: {
+    backgroundColor: cores.fundoCard,
+    borderRadius: 12,
+    overflow: "hidden",
+    width: 158,
+    marginRight: 12,
+    borderWidth: 1,
+    borderColor: cores.borda,
+  },
+  imagem: {
+    width:"100%",
+    height: 110,
+  },
+  info: {
+    padding: 10,
+  },
+  nome: {
+    color: cores.textoPrincipal,
+    fontSize: 14,
+    fonrWeight: "Bold",
+  },
+  genero: {
+    color: cores.textoSecundario,
+    fontSize: 12,
+    marginTop: 2,
+  },
+  nota: {
+    color: cores.verde,
+    fontSize: 12,
+    marginTop: 4,
+    fontWeight: "600",
+  }
+});
