@@ -34,7 +34,7 @@ export default function Inicio(){
     
     const destaques = jogos.filter((jogo) => jogo.destaque)
     // percore o array jogos e cria um novo array destaques contendo apenas os objetos cuja o campo "destaque" seja true.
-    const populares = [...jogos].sort((a, b) => b.nota - a.nota).slice(0, 5);
+    const populares = [...jogos].sort((a, b) => b.nota - a.nota).slice(0, 6);
     // ...jogos -> cria uma cópia do array original
     // sort((a, b) => b.nota - a.nota) ordena a cópia da maior nota para a menor
     // .slice(0, 5): extrai apenas os 5 primeiros elementos do array
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
         backgroundColor: cores.fundo,
     },
     conteudo: {
-        padding: 20,
+        padding: 10,
         paddingBottom: 40,
     },
     titulo: {
