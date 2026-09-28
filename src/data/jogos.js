@@ -20,7 +20,7 @@ export const jogos = [
        nota: 4.5,
        Plataforma: 'PC, Console, Mobile' ,
        Descricao: 'Uma ilha, um objetivo, SOBREVIVER!',
-       imagem: require('../../assets/games/minecraft.png'),
+       imagem: require('../../assets/games/fortnite.jpg'),
        Destaque: false
 
     },
@@ -42,7 +42,7 @@ export const jogos = [
        nota: 4.6,
        Plataforma: 'PC, Console, Mobile' ,
        Descricao: 'Varios jogos dentro de um jogo!',
-       imagem: require('../../assets/games/minecraft.png'),
+       imagem: require('../../assets/games/roblox.jpg'),
        Destaque: true
 
     },
@@ -53,7 +53,7 @@ export const jogos = [
        nota: 4.4,
        Plataforma: 'PC, Console, Mobile' ,
        Descricao: 'Futebol com carros turbinados',
-       imagem: require('../../assets/games/rocket-league.png'),
+       imagem: require('../../assets/games/rocket-league.jpg'),
        Destaque: false
 
     },
@@ -64,7 +64,7 @@ export const jogos = [
        nota: 4.4,
        Plataforma: 'PC, Console, Mobile' ,
        Descricao: 'Um jogo de tiro tatico em equipe',
-       imagem: require('../../assets/games/valorant.png'),
+       imagem: require('../../assets/games/valorant.jpg'),
        Destaque: true
 
     },
@@ -75,7 +75,7 @@ export const jogos = [
        nota: 4.2,
        Plataforma: 'PC, Console, Mobile' ,
        Descricao: 'Simulador e3 vida real',
-       imagem: require('../../assets/games/the-sims.png'),
+       imagem: require('../../assets/games/the-sims.jpg'),
        Destaque: false
 
     },
@@ -86,7 +86,7 @@ export const jogos = [
        nota: 4.1,
        Plataforma: 'PC, Console, Mobile' ,
        Descricao: 'Descubra quem é o impostor',
-       imagem: require('../../assets/games/among-us.png'),
+       imagem: require('../../assets/games/among-us.jpg'),
        Destaque: false
 
     },

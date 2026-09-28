@@ -7,28 +7,28 @@ import { View, Text, Image, Pressable, StyleSheet} from "react-native";
 import { useRouter } from "expo-router";
 
 import { cores } from "../data/tema";
-import { jogo } from "../data/jogos";
 
-export default function gamecard(jogos){
+export default function GameCard ({jogo}){
     const router = useRouter();
-    return(
-        <Pressable 
+
+    return (
+        <Pressable
         style={styles.card}
-        onPress={() => router.push(`/jogos/${jogo.id}`)}
+        onPress={() => router.push(`/jogos/${jogo.id}`)} //Navega entre as cotas
         >
-        
             <Image source={jogo.imagem} style={styles.imagem}/>
-            <view style={styles.info}>
-                <text style={styles.nome} numberOfLines={1}>
+            <View style={styles.info}>
+                <Text style={styles.nome} numberOfLines={1}>
                     {jogo.nome}
-                </text>
-                <text style={styles.genero}>{jogo.genero} </text>
-                <text style={styles.nota}>⭐ {jogo.genero}</text>
-            </view>
-        
+                </Text>
+                <Text style={styles.genero}>{jogo.genero}</Text>
+                <Text style={styles.nota}>⭐{jogo.nota}</Text>
+            </View>
+
         </Pressable>
     )
 }
+
 const styles = StyleSheet.create({
   card: {
     backgroundColor: cores.fundoCard,
